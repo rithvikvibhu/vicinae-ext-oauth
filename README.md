@@ -10,7 +10,11 @@ Polyfill for `@raycast/api`'s OAuth so that [Vicinae](https://vicinae.com) exten
    npm install
    npm install --save-dev @vicinae/api
    ```
-3. Replace
+3. Add this package
+   ```sh
+   npm install vicinae-ext-oauth
+   ```
+4. Replace
    ```ts
    import { OAuth } from '@raycast/api';
    ```
@@ -18,8 +22,8 @@ Polyfill for `@raycast/api`'s OAuth so that [Vicinae](https://vicinae.com) exten
    ```ts
    import { OAuth } from 'vicinae-ext-oauth';
    ```
-4. Set your own `clientId` (in the same file with the OAuth import)
-5. Try it out!
+5. Set your own `clientId` (in the same file with the OAuth import)
+6. Try it out!
    ```sh
    npx vici develop
    ```
