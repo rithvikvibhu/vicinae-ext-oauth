@@ -1,0 +1,37 @@
+{
+  "name": "vicinae-ext-oauth",
+  "version": "0.0.1",
+  "description": "OAuth library for Vicinae extensions",
+  "license": "MIT",
+  "homepage": "https://github.com/rithvikvibhu/vicinae-ext-oauth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rithvikvibhu/vicinae-ext-oauth"
+  },
+  "bugs": "https://github.com/rithvikvibhu/vicinae-ext-oauth/issues",
+  "author": "Rithvik Vibhu <rithvikvibhu@gmail.com>",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun run build.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.3.0"
+  },
+  "peerDependencies": {
+    "@raycast/api": "^1.0.0",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "oauth4webapi": "^3.8.2"
+  }
+}
